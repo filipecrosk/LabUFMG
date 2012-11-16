@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+ android:layout_width="fill_parent"
+ android:orientation="horizontal"
+ android:id="@+id/rowLayout"
+ android:layout_height="fill_parent"
+ xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background="@color/list_bg"> 
+     
+ 	<TextView
+		android:id="@+id/TextNome"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_marginLeft="25dp"
+		android:layout_marginTop="10dp"
+		android:gravity="left|center_vertical"
+		android:text="Nome do Cliente"
+		android:textSize="17dp"
+		android:focusable="false"
+        android:textColor="@color/cat_selector" />
+ 	
+</LinearLayout>

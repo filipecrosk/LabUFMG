@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".AddEvento"
+    android:background="@drawable/bg"
+   	android:focusable="true"
+   	android:focusableInTouchMode="true">
+	
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+		   <Button
+		       android:id="@+id/btCancelar"
+		       android:layout_width="120dp"
+		       android:layout_height="wrap_content"
+		       android:layout_marginTop="10dp"
+		       android:layout_marginRight="10dp"
+		       android:layout_gravity="right"
+		       android:textSize="18sp"
+		       android:text="Cancelar" />
+    </LinearLayout>
+	   
+	<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+		<AutoCompleteTextView
+		    android:id="@+id/NumAnimal"
+		    android:layout_width="80dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:ems="10"
+		    android:hint="Número do Animal" >
+		    <requestFocus />
+		</AutoCompleteTextView>
+	    
+	</LinearLayout>
+	
+	<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+		<EditText
+		    android:id="@+id/DataParto"
+		    android:layout_width="220dp"
+		    android:layout_height="wrap_content"
+		    android:hint="Data do último parto" />
+		
+		<EditText
+		    android:id="@+id/ProdLeite"
+		    android:layout_width="160dp"
+		    android:layout_height="wrap_content"
+		    android:hint="Produção de Leite"
+		    android:layout_marginLeft="10dp" />
+	    
+	</LinearLayout>
+	
+	<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+		<EditText
+		    android:id="@+id/NumAmostra"
+		    android:layout_width="220dp"
+		    android:layout_height="wrap_content"
+		    android:hint="Número da Amostra" />
+	    
+	</LinearLayout>
+	
+	<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+	    		<TextView
+			    android:id="@+id/textView1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Pesagens de Leite"
+			    android:textColor="#FFF"
+			    android:textSize="20sp"
+			    android:layout_marginTop="20dp" />
+	    
+		<LinearLayout
+	        android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content">
+
+			<EditText
+			    android:id="@+id/LeiteOrdenha1"
+			    android:layout_width="120dp"
+			    android:layout_height="wrap_content"
+			    android:hint="1ª Ordenha" />
+			
+			<EditText
+			    android:id="@+id/LeiteOrdenha2"
+			    android:layout_width="120dp"
+			    android:layout_height="wrap_content"
+			    android:hint="2ª Ordenha"
+			    android:layout_marginLeft="10dp" />
+			
+			<EditText
+			    android:id="@+id/LeiteOrdenha3"
+			    android:layout_width="120dp"
+			    android:layout_height="wrap_content"
+			    android:hint="3ª Ordenha"
+			    android:layout_marginLeft="10dp" />
+		</LinearLayout>
+	</LinearLayout>
+	   	
+	<TextView
+	   android:id="@+id/textView2"
+	   android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"
+	   android:text="Código de Lactação"
+	   android:textColor="#FFF"
+	   android:textSize="20sp"
+	   android:layout_marginTop="20dp" />
+	
+	<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+		<Spinner
+		    android:id="@+id/SpinLactacao"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"/>
+	    
+	</LinearLayout>
+	
+	<TextView
+	   android:id="@+id/textView3"
+	   android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"
+	   android:text="Evento"
+	   android:textColor="#FFF"
+	   android:textSize="20sp"
+	   android:layout_marginTop="20dp" />
+	
+	<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+		<Spinner
+		    android:id="@+id/SpinEvento"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"/>
+		
+	    <EditText
+			    android:id="@+id/DataEvento"
+			    android:layout_width="120dp"
+			    android:layout_height="wrap_content"
+			    android:hint="Data Evento"
+			    android:layout_marginLeft="10dp" />
+	</LinearLayout>
+	
+	<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+		
+	    <AutoCompleteTextView
+		    android:id="@+id/Touro"
+		    android:layout_width="80dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:ems="10"
+		    android:hint="Cod. Touro" >
+		</AutoCompleteTextView>
+		
+	    
+	</LinearLayout>
+
+	<Button
+	    android:id="@+id/btSalvar"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Salvar Evento" />
+	
+</LinearLayout>

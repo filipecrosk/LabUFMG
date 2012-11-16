@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<color name="transparente">#00000000</color>
+	<color name="blue">#0303ff</color>
+	<color name="grey">#CCCCCC</color>
+	<color name="white">#FFFFFF</color>
+	<color name="cinza">#EFEFEF</color>
+	<color name="calcinha">#F0FAFF</color>
+	<color name="azul">#0087CA</color>
+	<color name="azulsac">#0086C7</color>
+	<color name="verdim">#A9CE95</color>
+	<color name="bgverdim">#C2DDB4</color>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Animais"
+    android:background="@drawable/bg"
+   	android:focusable="true"
+   	android:focusableInTouchMode="true">
+	
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         >
+       <Button
+	       android:id="@+id/btMenu"
+	       android:layout_width="63dp"
+	       android:layout_height="wrap_content"
+	       android:layout_marginTop="10dp"
+	       android:layout_gravity="right"
+	       android:text="Menu" />
+	   <Button
+	       android:id="@+id/btAnimais"
+	       android:layout_width="83dp"
+	       android:layout_height="wrap_content"
+	       android:layout_marginTop="10dp"
+	       android:layout_gravity="right"
+	       android:text="Animais" />
+	   <Button
+	       android:id="@+id/btTouros"
+	       android:layout_width="73dp"
+	       android:layout_height="wrap_content"
+	       android:layout_marginTop="10dp"
+	       android:layout_gravity="right"
+	       android:text="Touros" />
+	   <Button
+	       android:id="@+id/btEventos"
+	       android:layout_width="73dp"
+	       android:layout_height="wrap_content"
+	       android:layout_marginTop="10dp"
+	       android:layout_gravity="right"
+	       android:text="Eventos" /> 
+    </LinearLayout>
+	   
+	   
+	 	<!-- Pretty hint text, and maxLines -->
+    	<EditText android:id="@+id/search_box" 
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:hint="busca"
+        	android:inputType="text"
+        	android:maxLines="1"/>
+	   
+	   <ListView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+		android:layout_height="0dip"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:fastScrollEnabled="true" >
+    	</ListView>	
+</LinearLayout>

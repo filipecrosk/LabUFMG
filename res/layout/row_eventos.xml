@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+ android:layout_width="fill_parent"
+ android:orientation="horizontal"
+ android:id="@+id/rowLayout"
+ android:layout_height="fill_parent"
+ xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background="@color/list_bg"> 
+     
+ 	<TextView
+		android:id="@+id/TextAnimal"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_marginLeft="5dp"
+		android:layout_marginTop="10dp"
+		android:gravity="left|center_vertical"
+		android:text="Animal"
+		android:textSize="17dp"
+		android:focusable="false"
+        android:textColor="@color/cat_selector" />
+ 	
+ 	<TextView
+		android:id="@+id/TextCod1"
+		android:layout_width="70dp"
+        android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="10dp"
+		android:gravity="left|center_vertical"
+		android:text="Cod evento 1"
+		android:textSize="12dp"
+		android:focusable="false"
+        android:textColor="@color/cat_selector" />
+ 	
+ 	<TextView
+		android:id="@+id/TextData1"
+		android:layout_width="70dp"
+        android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="10dp"
+		android:gravity="left|center_vertical"
+		android:text="Data 1"
+		android:textSize="12dp"
+		android:focusable="false"
+        android:textColor="@color/cat_selector" />
+ 	
+</LinearLayout>
